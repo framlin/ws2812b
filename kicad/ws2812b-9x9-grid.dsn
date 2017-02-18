@@ -1,0 +1,175 @@
+(pcb "/Users/framlin/tinker/ws2812b/kicad/ws2812b-9x9-grid.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "4.0.5")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (rect pcb 115115 -90725 167085 -114275)
+    )
+    (via "Via[0-1]_600:400_um")
+    (rule
+      (width 250)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component Capacitors_SMD:C_0805_HandSoldering
+      (place C1 148200 -102900 front 90 (PN 100nF))
+      (place C2 148200 -111500 front 90 (PN 100nF))
+      (place C3 136800 -111100 front 90 (PN 100nF))
+      (place C4 126300 -111500 front 90 (PN 100nF))
+      (place C5 136900 -102900 front 90 (PN 100nF))
+      (place C6 126100 -103000 front 90 (PN 100nF))
+      (place C7 148100 -95400 front 90 (PN 100nF))
+      (place C8 136700 -95600 front 90 (PN 100nF))
+      (place C9 126100 -95500 front 90 (PN 100nF))
+    )
+    (component ws2812b:WS2812B
+      (place D1 131300 -95600 front 0 (PN WS2812B_RGB))
+      (place D2 131600 -111400 front 0 (PN WS2812B_RGB))
+      (place D3 131400 -103100 front 0 (PN WS2812B_RGB))
+      (place D4 141900 -95600 front 0 (PN WS2812B_RGB))
+      (place D5 141900 -111200 front 0 (PN WS2812B_RGB))
+      (place D6 141900 -102900 front 0 (PN WS2812B_RGB))
+      (place D7 153200 -95400 front 0 (PN WS2812B_RGB))
+      (place D8 153300 -111500 front 0 (PN WS2812B_RGB))
+      (place D9 153200 -103000 front 0 (PN WS2812B_RGB))
+    )
+    (component "Connect:PINHEAD1-3"
+      (place P1 119900 -101500 front 270 (PN CONN_01X03))
+      (place P2 162200 -105800 front 90 (PN CONN_01X03))
+    )
+  )
+  (library
+    (image Capacitors_SMD:C_0805_HandSoldering
+      (outline (path signal 100  -1000 -625  -1000 625))
+      (outline (path signal 100  1000 -625  -1000 -625))
+      (outline (path signal 100  1000 625  1000 -625))
+      (outline (path signal 100  -1000 625  1000 625))
+      (outline (path signal 50  -2300 1000  2300 1000))
+      (outline (path signal 50  -2300 -1000  2300 -1000))
+      (outline (path signal 50  -2300 1000  -2300 -1000))
+      (outline (path signal 50  2300 1000  2300 -1000))
+      (outline (path signal 120  500 850  -500 850))
+      (outline (path signal 120  -500 -850  500 -850))
+      (pin Rect[T]Pad_1500x1250_um 1 -1250 0)
+      (pin Rect[T]Pad_1500x1250_um 2 1250 0)
+    )
+    (image ws2812b:WS2812B
+      (outline (path signal 150  2500 2500  2500 -2500))
+      (outline (path signal 150  -2500 2500  2500 2500))
+      (outline (path signal 150  -2500 -2500  -2500 2500))
+      (outline (path signal 150  -2500 2500  2500 2500))
+      (outline (path signal 150  2500 2500  2500 -2500))
+      (outline (path signal 150  2500 -2500  -2500 -2500))
+      (pin Rect[T]Pad_1500x900_um 2 -2450 -1650)
+      (pin Rect[T]Pad_1500x900_um 1 -2450 1650)
+      (pin Rect[T]Pad_1500x900_um 4 2450 1650)
+      (pin Rect[T]Pad_1500x900_um 3 2450 -1650)
+    )
+    (image "Connect:PINHEAD1-3"
+      (outline (path signal 120  -1270 3170  -1270 -3170))
+      (outline (path signal 120  6350 3170  6350 -3170))
+      (outline (path signal 120  6350 1270  -1270 1270))
+      (outline (path signal 120  -1270 3170  6350 3170))
+      (outline (path signal 120  6350 -3170  -1270 -3170))
+      (outline (path signal 50  -1520 3420  6600 3420))
+      (outline (path signal 50  -1520 3420  -1520 -3420))
+      (outline (path signal 50  6600 -3420  6600 3420))
+      (outline (path signal 50  6600 -3420  -1520 -3420))
+      (pin Oval[A]Pad_1510x3010_um 1 0 0)
+      (pin Oval[A]Pad_1510x3010_um 2 2540 0)
+      (pin Oval[A]Pad_1510x3010_um 3 5080 0)
+    )
+    (padstack Oval[A]Pad_1510x3010_um
+      (shape (path F.Cu 1510  0 -750  0 750))
+      (shape (path B.Cu 1510  0 -750  0 750))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1500x900_um
+      (shape (rect F.Cu -750 -450 750 450))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1500x1250_um
+      (shape (rect F.Cu -750 -625 750 625))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:400_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net GND
+      (pins C1-1 C2-1 C3-1 C4-1 C5-1 C6-1 C7-1 C8-1 C9-1 D1-3 D2-3 D3-3 D4-3 D5-3
+        D6-3 D7-3 D8-3 D9-3 P1-1 P2-1)
+    )
+    (net VDD
+      (pins C1-2 C2-2 C3-2 C4-2 C5-2 C6-2 C7-2 C8-2 C9-2 D1-1 D2-1 D3-1 D4-1 D5-1
+        D6-1 D7-1 D8-1 D9-1 P1-2 P2-2)
+    )
+    (net Data_Line_1
+      (pins D1-2 D9-4)
+    )
+    (net "Net-(D1-Pad4)"
+      (pins D1-4 D4-2)
+    )
+    (net Data_OUT
+      (pins D2-2 P1-3)
+    )
+    (net "Net-(D2-Pad4)"
+      (pins D2-4 D5-2)
+    )
+    (net Data_Line_2
+      (pins D3-2 D8-4)
+    )
+    (net "Net-(D3-Pad4)"
+      (pins D3-4 D6-2)
+    )
+    (net "Net-(D4-Pad4)"
+      (pins D4-4 D7-2)
+    )
+    (net "Net-(D5-Pad4)"
+      (pins D5-4 D8-2)
+    )
+    (net "Net-(D6-Pad4)"
+      (pins D6-4 D9-2)
+    )
+    (net Data_IN
+      (pins D7-4 P2-3)
+    )
+    (class kicad_default "" Data_IN Data_Line_1 Data_Line_2 Data_OUT GND "Net-(D1-Pad4)"
+      "Net-(D2-Pad4)" "Net-(D3-Pad4)" "Net-(D4-Pad4)" "Net-(D5-Pad4)" "Net-(D6-Pad4)"
+      VDD
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+  )
+)

@@ -1,0 +1,30 @@
+Source,/Users/framlin/tinker/ws2812b/kicad/ws2812b-9x9-grid.sch
+Kicad Rev,Eeschema 4.0.5
+Generated Date,Sonntag, 19. Februar 2017 'u04' 00:04:18
+
+Title,WS2812B experimental
+Company,framlin
+Revision,1.0
+Date Issue,18.02.2017
+
+Reference,Value,Library,Library Ref
+D1,WS2812B_RGB,ws2812b,WS2812B_RGB
+D4,WS2812B_RGB,ws2812b,WS2812B_RGB
+D7,WS2812B_RGB,ws2812b,WS2812B_RGB
+D3,WS2812B_RGB,ws2812b,WS2812B_RGB
+D6,WS2812B_RGB,ws2812b,WS2812B_RGB
+D9,WS2812B_RGB,ws2812b,WS2812B_RGB
+D2,WS2812B_RGB,ws2812b,WS2812B_RGB
+D5,WS2812B_RGB,ws2812b,WS2812B_RGB
+D8,WS2812B_RGB,ws2812b,WS2812B_RGB
+C4,100nF,device,C
+C2,100nF,device,C
+C7,100nF,device,C
+C1,100nF,device,C
+C5,100nF,device,C
+C8,100nF,device,C
+C3,100nF,device,C
+C6,100nF,device,C
+C9,100nF,device,C
+P1,CONN_01X03,conn,CONN_01X03
+P2,CONN_01X03,conn,CONN_01X03
