@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP WS2812B_RGB
+D LED dual, 4-pin
+K led diode bicolor dual
+$ENDCMP
+#
+#End Doc Library
